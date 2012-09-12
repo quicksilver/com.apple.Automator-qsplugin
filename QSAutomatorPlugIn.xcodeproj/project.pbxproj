@@ -3,35 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 42;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F93271D0C262797006B7A84 /* element.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7F93271C0C262797006B7A84 /* element.xml */; };
+		7F7239100D030731009D935D /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F72390F0D030731009D935D /* Automator.framework */; };
 		7FCC226207EC09E000584636 /* QSAutomatorPlugIn_Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCC226107EC09E000584636 /* QSAutomatorPlugIn_Action.m */; };
-		7FE7D38D0D1F01640043A815 /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9327C60C262852006B7A84 /* Automator.framework */; };
-		7FE7D3B20D1F025A0043A815 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		CD6FFEDE1601043A00E20DE9 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD6FFED81601043A00E20DE9 /* Common.xcconfig */; };
+		CD6FFEDF1601043A00E20DE9 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD6FFED91601043A00E20DE9 /* Debug.xcconfig */; };
+		CD6FFEE01601043A00E20DE9 /* Developer.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD6FFEDA1601043A00E20DE9 /* Developer.xcconfig */; };
+		CD6FFEE11601043A00E20DE9 /* QSPlugIn.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD6FFEDB1601043A00E20DE9 /* QSPlugIn.xcconfig */; };
+		CD6FFEE21601043A00E20DE9 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD6FFEDD1601043A00E20DE9 /* Release.xcconfig */; };
 		E1EAB046068128A200774DFF /* QSAutomatorPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB045068128A200774DFF /* QSAutomatorPlugIn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14A8D2FA10CE5EBA003857E3 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
-		14A8D2FB10CE5EBA003857E3 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		14A8D2FC10CE5EBA003857E3 /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
-		14A8D2FD10CE5EBA003857E3 /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
-		14A8D2FE10CE5EBA003857E3 /* QSPlugIn_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPlugIn_Prefix.pch; sourceTree = "<group>"; };
-		14A8D2FF10CE5EBA003857E3 /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
-		14A8D30010CE5EBA003857E3 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
-		14A8D30110CE5EBA003857E3 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		32DBCF980370C29C00C91783 /* QSAutomatorPlugIn_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSAutomatorPlugIn_Prefix.pch; sourceTree = "<group>"; };
-		7F93271C0C262797006B7A84 /* element.xml */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = element.xml; sourceTree = "<group>"; };
-		7F9327C60C262852006B7A84 /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = /System/Library/Frameworks/Automator.framework; sourceTree = "<absolute>"; };
+		7F72390F0D030731009D935D /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = /System/Library/Frameworks/Automator.framework; sourceTree = "<absolute>"; };
 		7FCC226007EC09E000584636 /* QSAutomatorPlugIn_Action.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSAutomatorPlugIn_Action.h; sourceTree = "<group>"; };
 		7FCC226107EC09E000584636 /* QSAutomatorPlugIn_Action.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSAutomatorPlugIn_Action.m; sourceTree = "<group>"; };
-		7FE7D36C0D1F00B50043A815 /* QSElement.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = QSElement.xcconfig; path = Configuration/QSElement.xcconfig; sourceTree = QS_SOURCE_ROOT; };
-		7FE7D36D0D1F00B50043A815 /* QSElement_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSElement_Prefix.pch; path = Configuration/QSElement_Prefix.pch; sourceTree = QS_SOURCE_ROOT; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1AC9740486D14A00FE50C9 /* Automator.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Automator.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1AC9740486D14A00FE50C9 /* Automator Plugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Automator Plugin.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6FFED81601043A00E20DE9 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		CD6FFED91601043A00E20DE9 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		CD6FFEDA1601043A00E20DE9 /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		CD6FFEDB1601043A00E20DE9 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
+		CD6FFEDC1601043A00E20DE9 /* Quicksilver.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
+		CD6FFEDD1601043A00E20DE9 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		E1EAB045068128A200774DFF /* QSAutomatorPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSAutomatorPlugIn.m; sourceTree = "<group>"; };
 		E1EAB047068128A800774DFF /* QSAutomatorPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSAutomatorPlugIn.h; sourceTree = "<group>"; };
@@ -42,8 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FE7D38D0D1F01640043A815 /* Automator.framework in Frameworks */,
-				7FE7D3B20D1F025A0043A815 /* Cocoa.framework in Frameworks */,
+				8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */,
+				7F7239100D030731009D935D /* Automator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +51,7 @@
 		0259C574FE90428111CA0C5A /* QSAutomatorPlugIn */ = {
 			isa = PBXGroup;
 			children = (
-				7FE7D3680D1F00B50043A815 /* Configuration */,
+				CD6FFED71601043A00E20DE9 /* Configuration */,
 				32DBCF9E0370C38000C91783 /* Classes */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
 				0259C582FE90428111CA0C5A /* Resources */,
@@ -66,7 +64,6 @@
 		0259C582FE90428111CA0C5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7F93271C0C262797006B7A84 /* element.xml */,
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
 			);
 			name = Resources;
@@ -75,7 +72,7 @@
 		1ED78706FE9D4A0611CA0C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1AC9740486D14A00FE50C9 /* Automator.qsplugin */,
+				8D1AC9740486D14A00FE50C9 /* Automator Plugin.qsplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,8 +80,8 @@
 		2E58F364FFB232C311CA0CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F9327C60C262852006B7A84 /* Automator.framework */,
 				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
+				7F72390F0D030731009D935D /* Automator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				E1EAB045068128A200774DFF /* QSAutomatorPlugIn.m */,
-				32DBCF980370C29C00C91783 /* QSAutomatorPlugIn_Prefix.pch */,
 				7FCC226007EC09E000584636 /* QSAutomatorPlugIn_Action.h */,
 				7FCC226107EC09E000584636 /* QSAutomatorPlugIn_Action.m */,
 			);
@@ -108,29 +104,26 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		7FE7D3680D1F00B50043A815 /* Configuration */ = {
+		CD6FFED71601043A00E20DE9 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				14A8D2FA10CE5EBA003857E3 /* Common.xcconfig */,
-				14A8D2FB10CE5EBA003857E3 /* Debug.xcconfig */,
-				14A8D2FC10CE5EBA003857E3 /* Developer.xcconfig */,
-				14A8D2FD10CE5EBA003857E3 /* QSPlugIn_Debug.xcconfig */,
-				14A8D2FE10CE5EBA003857E3 /* QSPlugIn_Prefix.pch */,
-				14A8D2FF10CE5EBA003857E3 /* QSPlugIn_Release.xcconfig */,
-				14A8D30010CE5EBA003857E3 /* QSPlugIn.xcconfig */,
-				14A8D30110CE5EBA003857E3 /* Release.xcconfig */,
-				7FE7D36C0D1F00B50043A815 /* QSElement.xcconfig */,
-				7FE7D36D0D1F00B50043A815 /* QSElement_Prefix.pch */,
+				CD6FFED81601043A00E20DE9 /* Common.xcconfig */,
+				CD6FFED91601043A00E20DE9 /* Debug.xcconfig */,
+				CD6FFEDA1601043A00E20DE9 /* Developer.xcconfig */,
+				CD6FFEDB1601043A00E20DE9 /* QSPlugIn.xcconfig */,
+				CD6FFEDC1601043A00E20DE9 /* Quicksilver.pch */,
+				CD6FFEDD1601043A00E20DE9 /* Release.xcconfig */,
 			);
-			path = Configuration;
-			sourceTree = QS_SOURCE_ROOT;
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1AC9600486D14A00FE50C9 /* Automator */ = {
+		8D1AC9600486D14A00FE50C9 /* Automator Plugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F07AF36085E432B00E2AFC4 /* Build configuration list for PBXNativeTarget "Automator" */;
+			buildConfigurationList = 7F07AF36085E432B00E2AFC4 /* Build configuration list for PBXNativeTarget "Automator Plugin" */;
 			buildPhases = (
 				8D1AC9660486D14A00FE50C9 /* Resources */,
 				8D1AC96A0486D14A00FE50C9 /* Sources */,
@@ -141,10 +134,10 @@
 			);
 			dependencies = (
 			);
-			name = Automator;
+			name = "Automator Plugin";
 			productInstallPath = "$(HOME)/Developer/Palettes";
 			productName = QSAutomatorPlugIn;
-			productReference = 8D1AC9740486D14A00FE50C9 /* Automator.qsplugin */;
+			productReference = 8D1AC9740486D14A00FE50C9 /* Automator Plugin.qsplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -152,14 +145,18 @@
 /* Begin PBXProject section */
 		0259C573FE90428111CA0C5A /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 7F07AF3A085E432B00E2AFC4 /* Build configuration list for PBXProject "AutomatorElement" */;
-			compatibilityVersion = "Xcode 3.0";
+			buildConfigurationList = 7F07AF3A085E432B00E2AFC4 /* Build configuration list for PBXProject "QSAutomatorPlugIn" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 0259C574FE90428111CA0C5A /* QSAutomatorPlugIn */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1AC9600486D14A00FE50C9 /* Automator */,
+				8D1AC9600486D14A00FE50C9 /* Automator Plugin */,
 			);
 		};
 /* End PBXProject section */
@@ -169,7 +166,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F93271D0C262797006B7A84 /* element.xml in Resources */,
+				CD6FFEDE1601043A00E20DE9 /* Common.xcconfig in Resources */,
+				CD6FFEDF1601043A00E20DE9 /* Debug.xcconfig in Resources */,
+				CD6FFEE01601043A00E20DE9 /* Developer.xcconfig in Resources */,
+				CD6FFEE11601043A00E20DE9 /* QSPlugIn.xcconfig in Resources */,
+				CD6FFEE21601043A00E20DE9 /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,14 +179,14 @@
 /* Begin PBXShellScriptBuildPhase section */
 		E1022B2806B3475D00299BEC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$SRCROOT/bltrversion $INFOPLIST_FILE";
 		};
@@ -204,53 +205,65 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		7F07AF37085E432B00E2AFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6FFEDB1601043A00E20DE9 /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				INFOPLIST_FILE = Info.plist;
+				OTHER_LDFLAGS = "-bundle";
+				PRODUCT_NAME = "Automator Plugin";
+				WRAPPER_EXTENSION = qsplugin;
+			};
+			name = Debug;
+		};
 		7F07AF38085E432B00E2AFC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A8D2FF10CE5EBA003857E3 /* QSPlugIn_Release.xcconfig */;
+			baseConfigurationReference = CD6FFEDB1601043A00E20DE9 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = Automator;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				INFOPLIST_FILE = Info.plist;
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-weak_framework",
+					Automator,
+				);
+				PRODUCT_NAME = "Automator Plugin";
+				WRAPPER_EXTENSION = qsplugin;
 			};
 			name = Release;
 		};
-		7F07AF39085E432B00E2AFC4 /* Debug */ = {
+		7F07AF3B085E432B00E2AFC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A8D2FD10CE5EBA003857E3 /* QSPlugIn_Debug.xcconfig */;
+			baseConfigurationReference = CD6FFED91601043A00E20DE9 /* Debug.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = Automator;
 			};
 			name = Debug;
 		};
 		7F07AF3C085E432B00E2AFC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A8D30110CE5EBA003857E3 /* Release.xcconfig */;
+			baseConfigurationReference = CD6FFEDD1601043A00E20DE9 /* Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		7F07AF3D085E432B00E2AFC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A8D2FB10CE5EBA003857E3 /* Debug.xcconfig */;
-			buildSettings = {
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F07AF36085E432B00E2AFC4 /* Build configuration list for PBXNativeTarget "Automator" */ = {
+		7F07AF36085E432B00E2AFC4 /* Build configuration list for PBXNativeTarget "Automator Plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
+				7F07AF37085E432B00E2AFC4 /* Debug */,
 				7F07AF38085E432B00E2AFC4 /* Release */,
-				7F07AF39085E432B00E2AFC4 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		7F07AF3A085E432B00E2AFC4 /* Build configuration list for PBXProject "AutomatorElement" */ = {
+		7F07AF3A085E432B00E2AFC4 /* Build configuration list for PBXProject "QSAutomatorPlugIn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
+				7F07AF3B085E432B00E2AFC4 /* Debug */,
 				7F07AF3C085E432B00E2AFC4 /* Release */,
-				7F07AF3D085E432B00E2AFC4 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

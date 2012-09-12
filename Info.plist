@@ -11,13 +11,15 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Automator Module</string>
+	<string>Automator Plugin</string>
+	<key>CFBundleDisplayName</key>
+	<string>Automator Plugin</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
-	<key>CFBundleVersion</key>
-	<string>5C</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.0</string>
+	<string>1.2.0</string>
+	<key>CFBundleVersion</key>
+	<string>5D</string>
 	<key>QSActions</key>
 	<dict>
 		<key>QSAutomatorWorkflowExecuteAction</key>
@@ -26,13 +28,13 @@
 			<string>QSAutomatorPlugIn_Action</string>
 			<key>actionSelector</key>
 			<string>runWorkflow:</string>
-			<key>folderTypes</key>
-			<array>
-				<string>workflow</string>
-			</array>
 			<key>directTypes</key>
 			<array>
 				<string>NSFilenamesPboardType</string>
+			</array>
+			<key>directFileTypes</key>
+			<array>
+				<string>com.apple.automator-workflow</string>
 			</array>
 			<key>icon</key>
 			<string>com.apple.Automator</string>
