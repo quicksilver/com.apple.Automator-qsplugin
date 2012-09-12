@@ -15,6 +15,8 @@
 		CD6FFEE01601043A00E20DE9 /* Developer.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD6FFEDA1601043A00E20DE9 /* Developer.xcconfig */; };
 		CD6FFEE11601043A00E20DE9 /* QSPlugIn.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD6FFEDB1601043A00E20DE9 /* QSPlugIn.xcconfig */; };
 		CD6FFEE21601043A00E20DE9 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD6FFEDD1601043A00E20DE9 /* Release.xcconfig */; };
+		CDFBEF1716010B8500E1FC86 /* QSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFBEF1616010B8500E1FC86 /* QSCore.framework */; };
+		CDFBEF19160111C900E1FC86 /* QSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFBEF18160111C900E1FC86 /* QSFoundation.framework */; };
 		E1EAB046068128A200774DFF /* QSAutomatorPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB045068128A200774DFF /* QSAutomatorPlugIn.m */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		CD6FFEDB1601043A00E20DE9 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
 		CD6FFEDC1601043A00E20DE9 /* Quicksilver.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
 		CD6FFEDD1601043A00E20DE9 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		CDFBEF1616010B8500E1FC86 /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFBEF18160111C900E1FC86 /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSFoundation.framework; path = ../../../../../../private/tmp/QS/build/Release/QSFoundation.framework; sourceTree = "<group>"; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		E1EAB045068128A200774DFF /* QSAutomatorPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSAutomatorPlugIn.m; sourceTree = "<group>"; };
 		E1EAB047068128A800774DFF /* QSAutomatorPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSAutomatorPlugIn.h; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 			files = (
 				8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */,
 				7F7239100D030731009D935D /* Automator.framework in Frameworks */,
+				CDFBEF1716010B8500E1FC86 /* QSCore.framework in Frameworks */,
+				CDFBEF19160111C900E1FC86 /* QSFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,8 @@
 		2E58F364FFB232C311CA0CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDFBEF18160111C900E1FC86 /* QSFoundation.framework */,
+				CDFBEF1616010B8500E1FC86 /* QSCore.framework */,
 				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
 				7F72390F0D030731009D935D /* Automator.framework */,
 			);
@@ -125,10 +133,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F07AF36085E432B00E2AFC4 /* Build configuration list for PBXNativeTarget "Automator Plugin" */;
 			buildPhases = (
+				E1022B2806B3475D00299BEC /* Update Version and Documentation */,
 				8D1AC9660486D14A00FE50C9 /* Resources */,
 				8D1AC96A0486D14A00FE50C9 /* Sources */,
 				8D1AC96E0486D14A00FE50C9 /* Frameworks */,
-				E1022B2806B3475D00299BEC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -177,18 +185,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E1022B2806B3475D00299BEC /* ShellScript */ = {
+		E1022B2806B3475D00299BEC /* Update Version and Documentation */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Update Version and Documentation";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/bltrversion $INFOPLIST_FILE";
+			shellScript = "\"$QS_BUILD_ROOT/Tools/bltrversion\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -209,11 +218,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD6FFEDB1601043A00E20DE9 /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/tmp/QS/build/Release,
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				INFOPLIST_FILE = Info.plist;
 				OTHER_LDFLAGS = "-bundle";
 				PRODUCT_NAME = "Automator Plugin";
-				WRAPPER_EXTENSION = qsplugin;
 			};
 			name = Debug;
 		};
@@ -221,15 +232,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD6FFEDB1601043A00E20DE9 /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/tmp/QS/build/Release,
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				INFOPLIST_FILE = Info.plist;
 				OTHER_LDFLAGS = (
 					"-bundle",
 					"-weak_framework",
 					Automator,
 				);
 				PRODUCT_NAME = "Automator Plugin";
-				WRAPPER_EXTENSION = qsplugin;
 			};
 			name = Release;
 		};

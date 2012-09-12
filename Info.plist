@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>Automator Plugin</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -12,14 +14,12 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>Automator Plugin</string>
-	<key>CFBundleDisplayName</key>
-	<string>Automator Plugin</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.2.0</string>
 	<key>CFBundleVersion</key>
-	<string>5D</string>
+	<string>61</string>
 	<key>QSActions</key>
 	<dict>
 		<key>QSAutomatorWorkflowExecuteAction</key>
@@ -28,13 +28,13 @@
 			<string>QSAutomatorPlugIn_Action</string>
 			<key>actionSelector</key>
 			<string>runWorkflow:</string>
-			<key>directTypes</key>
-			<array>
-				<string>NSFilenamesPboardType</string>
-			</array>
 			<key>directFileTypes</key>
 			<array>
 				<string>com.apple.automator-workflow</string>
+			</array>
+			<key>directTypes</key>
+			<array>
+				<string>NSFilenamesPboardType</string>
 			</array>
 			<key>icon</key>
 			<string>com.apple.Automator</string>
@@ -57,6 +57,12 @@
 		</array>
 		<key>description</key>
 		<string>Support For Workflows and Automator Actions</string>
+		<key>extendedDescription</key>
+		<string>&lt;h2&gt;Automator Plugin&lt;/h2&gt;
+&lt;p&gt;The Automator plugin adds a single 'Execute Workflow' action for running Automator workflows.&lt;/p&gt;
+&lt;h3&gt;Actions&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt; Execute Workflow &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;With an Automator workflow selected in Quicksilver's first pane, the 'Execute Workflow' action runs the workflow.&lt;/p&gt;</string>
 		<key>icon</key>
 		<string>com.apple.Automator</string>
 		<key>relatedBundles </key>
@@ -74,8 +80,8 @@
 	</dict>
 	<key>QSRequirements</key>
 	<dict>
-		<key>feature</key>
-		<integer>1</integer>
+		<key>version</key>
+		<integer>3933</integer>
 	</dict>
 </dict>
 </plist>
