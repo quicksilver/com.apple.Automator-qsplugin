@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>Automator Plugin</string>
+	<string>Automator</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,9 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.0</string>
+	<string>1.2.1</string>
 	<key>CFBundleVersion</key>
-	<string>61</string>
+	<string>62</string>
 	<key>QSActions</key>
 	<dict>
 		<key>QSAutomatorWorkflowExecuteAction</key>
@@ -81,7 +81,7 @@
 	<key>QSRequirements</key>
 	<dict>
 		<key>version</key>
-		<integer>3933</integer>
+		<string>3933</string>
 	</dict>
 </dict>
 </plist>
